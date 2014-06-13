@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smaaht</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div class="header">
+			<div class="container clearfix">
+				<a href="index.html" class="logo">
+					<h1><img src="img/smaaht_logo.png" alt="smaaht logo"></h1>
+				</a>
+				<div class="search-container">
+					<form class="search">
+						<input type="text" placeholder="Search"/>
+						<input type="submit" value="" />
+					</form>
+				</div>
+				<div class="btn-add-container">
+					<a class="btn-add" href="#form-add-business">Add Business</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal-box">
+			<form id="form-add-business" class="modal">
+				<h3>Add Business to the Directory</h3>
+				<a href="#" class="form-close">X</a>
+				<hr /><br />
+				<label>Business Name</label>
+				<input type="text" />
+				<label>Address </label>
+				<input type="text" />
+				<label>City </label>
+				<input type="text" />
+				<label>State</label>
+				<select>
+					<option>State 1</option>
+					<option>State 2</option>
+					<option>State 3</option>
+					<option>State 4</option>
+				</select>
+				<label>Phone</label>
+				<input type="tel"/>
+				<label>Website</label>
+				<input type="text" />
+				<label>Email</label>
+				<input type="email" />
+				<label>Category</label>
+				<ul id="tags">
+				    <input type="text" value="" placeholder="Add a tag" />
+				</ul>
+				<div class="btn-option-container">
+					<button id="btnFree" class="btn-option">Free listing</button/>
+					<button id="btnPremium" class="btn-option btn-premium">Premium listing $99</button/>
+				</div>
+			</form>
+		</div>
+		<!-- Content -->
+		<div class="content container">
+			<div class="breadcrumbs">
+				<a>Home</a>
+			</div>
+
+			<h2 class="page-title">Browse by State</h2>
+
+			<div id="state-list">
+
+				<div class="dir">
+					<h4 class="dir-label">A</h4>
+					<div class="dir-content clearfix">
+						<div class="col-3">
+							<a href="city.html">Alabama</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Alaska</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Arizona</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Arkansas</a>
+						</div>
+					</div>
+				</div>
+				<div class="dir">
+					<h4 class="dir-label">C</h4>
+					<div class="dir-content clearfix">
+						<div class="col-3">
+							<a href="city.html">California</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Colorado</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Connecticut</a>
+						</div>
+					</div>
+				</div>
+				<div class="dir">
+					<h4 class="dir-label">A</h4>
+					<div class="dir-content clearfix">
+						<div class="col-3">
+							<a href="city.html">Alabama</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Alaska</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Arizona</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Arkansas</a>
+						</div>
+					</div>
+				</div>
+				<div class="dir">
+					<h4 class="dir-label">C</h4>
+					<div class="dir-content clearfix">
+						<div class="col-3">
+							<a href="city.html">California</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Colorado</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Connecticut</a>
+						</div>
+					</div>
+				</div>
+				<div class="dir">
+					<h4 class="dir-label">A</h4>
+					<div class="dir-content clearfix">
+						<div class="col-3">
+							<a href="city.html">Alabama</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Alaska</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Arizona</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Arkansas</a>
+						</div>
+					</div>
+				</div>
+				<div class="dir">
+					<h4 class="dir-label">C</h4>
+					<div class="dir-content clearfix">
+						<div class="col-3">
+							<a href="city.html">California</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Colorado</a>
+						</div>
+						<div class="col-3">
+							<a href="city.html">Connecticut</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer clearfix">
+			<div class="container">
+				<div class="footer-text">
+					Copyright 2014, <a href="http://smaaht.com"> smaaht.com </a>
+				</div>
+				<div class="footer-icons">
+					<a href="#"><img class="social-icon" src="img/icon-facebook-round.png" /></a>
+					<a href="#"><img class="social-icon" src="img/icon-twitter-round.png" /></a>
+					<a href="#"><img class="social-icon" src="img/icon-google-round.png" /></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				// Modal
+				$('.btn-add').on('click', function(){
+					$('.modal-box').fadeIn();
+				});
+
+				$('.form-close').on('click', function(){
+					closeModal();
+				});
+
+				function closeModal(){
+					$('.modal-box').fadeOut({speed: 'fast'});
+				}
+
+
+				// Tags
+				  $('#tags input').on('focusout',function(){    
+				    var txt= this.value.replace(/[^a-zA-Z0-9\ \+\-\.\#]/g,''); // allowed characters
+				    if ((txt) && (txt != '')) {
+				      $(this).before('<li class="tag">'+ txt +'</li>');
+				    }
+				    this.value="";
+				  }).on('keyup',function( e ){
+				    // if: comma,enter (delimit more keyCodes with | pipe)
+				    if(/(188|13)/.test(e.which)) $(this).focusout(); 
+
+				  });
+				  
+				  
+				  $('#tags').on('click','.tag',function(){
+				     //if(confirm("Really delete this tag?")) 
+				     $(this).remove(); 
+				  });
+
+				  // Ajax Post
+
+				  $('#btnFree').on('click', function(){
+				  	$.ajax({
+				  		type: 'POST',
+				  		url: 'api',
+				  		data: {
+				  			'businessName' : "Nexucloud"
+				  		},
+
+				  		success: function (data) {
+				  			alert(data);
+				  		}
+				  	 })
+				  	.done(function(data) {
+
+						// log data to the console so we can see
+						console.log(data); 
+
+						// here we will handle errors and validation messages
+					});
+
+					// stop the form from submitting the normal way and refreshing the page
+					event.preventDefault();
+				  	;
+				  });
+			});
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
