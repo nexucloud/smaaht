@@ -25,9 +25,10 @@ img {
 #tags{
   float:left;
   border:1px solid #ccc;
-  padding:5px;
+  padding:2px;
   font-family:Arial;
   width: 100%;
+  min-height:80px;
   list-style-type: none;
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
@@ -41,24 +42,29 @@ img {
   padding:5px;
   padding-right:25px;
   margin:4px;
-
+  position: relative;
 }
 #tags li.tag:hover{
-  opacity:0.7;
+  background-color:#777;
 }
 #tags li.tag:after{
  position:absolute;
  content:"x";
- padding:0 4px;
+ padding:0 5px 1px 5px;
  margin:3px 0 10px 5px;
  font-size:10px;
+ top:5px;
+ right:5px;
+ border-radius: 50%;
+ background: #444;
 }
 #tags input{
   background:#eee;
-  border:0;
+  border:1px solid #ccc;
   margin:4px;
   padding:7px;
   width:auto;
+
 }
 
 
@@ -194,12 +200,19 @@ body { font-family: 'Calibri',sans-serif; }
 	background-color:#ccc;
 	border:1px solid rgba(0,0,0,0.2);
 	display: inline-block;
-
+	cursor: pointer;
+}
+.btn-option:hover{
+	background-color:#bbb;
 }
 .btn-premium {
 	background-color: #fcb113;
 	font-weight: bold;
 }
+.btn-premium:hover {
+	background-color: #db960d;
+}
+
 .btn-option-container{
 	text-align: right;
 	margin-bottom: 10px;
@@ -260,7 +273,7 @@ body { font-family: 'Calibri',sans-serif; }
 	width:100%;
 	height:100%;
 	background: rgba(0,0,0,0.5) fixed;
-	position: absolute;
+	position: fixed;
 	z-index:100;
 	top:0;
 	left:0;
@@ -415,6 +428,7 @@ body { font-family: 'Calibri',sans-serif; }
 	height:36px;
 	padding-left: 10px;
 }
+
 @media  (max-width: 768px){
 	/* Directory */
 	.dir a{
@@ -468,6 +482,15 @@ body { font-family: 'Calibri',sans-serif; }
 	.search{
 		margin:5px 0;
 	}
+	/* Modal */
+	#form-add-business{ margin-left:0; }
+	.modal{
+		width:95%;
+		left:2.5%;
+	}
+	.btn-option{
+		width:100%;
+	}
 	/* Body */
 	.container{ padding: 0 10px;}
 	.content {
@@ -485,5 +508,19 @@ body { font-family: 'Calibri',sans-serif; }
 	}
 	.footer-icons{
 		margin:15px 0;
+	}
+}
+@media (max-height: 700px){
+	.modal{
+		top:10px;
+	}
+}
+@media (max-height: 750px){
+	.modal-box{
+		position: absolute;
+		background: none;
+	}
+	.modal{
+		box-shadow: 0px 0px 100px rgba(0,0,0,0.5);
 	}
 }

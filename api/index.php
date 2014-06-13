@@ -3,18 +3,23 @@
 	$errors         = array();  	// array to hold validation errors
 	$data 			= array(); 		// array to pass back data
 
-	
+	// validate the variables ======================================================
+	// if any of these variables don't exist, add an error to our $errors array
+
+	//if (empty($_POST['businessName'])
+	//	$errors['businessName'] = 'Business Name is required';
+
+
     if ( ! empty($errors)) {
 
 		// if there are items in our errors array, return those errors
 		$data['success'] = false;
 		$data['errors']  = $errors;
 		
-
 	} else {
 
 		// if there are no errors process our form, then return a message
-		
+
 		// Settings
 		if (isset($_POST['listingType'])) {
 
@@ -28,7 +33,7 @@
 		
 		// DB Connection
 
-		$dbc = mysqli_connect($dbConnection['host'],$dbConnection['user'], $dbConnection['password'], $dbConnection['db_name']) 
+		$dbc = mysqli_connect($dbConnection['host'], $dbConnection['user'], $dbConnection['password'], $dbConnection['db_name']) 
 				OR die('Could not connect to MySQL: ' . mysqli_connect_error());		
 
 		// Handle POST
